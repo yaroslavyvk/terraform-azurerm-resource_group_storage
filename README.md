@@ -7,7 +7,7 @@ This Terraform module creates an Azure Resource Group and an Azure Storage Accou
 
 ```hcl
 module "resource_group_storage" {
-  source  = "https://github.com/yaroslavyvk/terraform-azurerm-resource_group_storage"
+  source  = "yaroslavyvk/resource_group_storage/azurerm"
   version = "1.1.0"
 
   resource_group_name  = "my-resource-group"
@@ -60,7 +60,7 @@ provider "azurerm" {
 }
 
 module "resource_group_storage" {
-  source  = "https://github.com/yaroslavyvk/terraform-azurerm-resource_group_storage"
+  source  = "yaroslavyvk/resource_group_storage/azurerm"
   version = "1.1.0"
 
   resource_group_name  = "example-resource-group"
